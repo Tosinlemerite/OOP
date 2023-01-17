@@ -42,13 +42,17 @@ namespace OOP
         {
 
         }
-        public static void FindAccountByNumber()
+        public Account FindAccountByNumber()
         {
-
+            return null;
         }
-        public static void FindAccountById()
+        public Account FindAccountById()
         {
-
+            return null;
+        }
+        public string GenerateAccountNumber()
+        {
+            return string.Empty;
         }
 
 

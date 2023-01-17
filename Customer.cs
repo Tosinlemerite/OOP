@@ -57,6 +57,15 @@ namespace OOP
         {
 
         }
+        public static bool VerifyNIN()
+        {
+            return true;
+        }
+        public static bool VerifyBVN()
+        {
+            return true;
+        }
+
 
 
     }
