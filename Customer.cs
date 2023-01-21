@@ -29,33 +29,127 @@ namespace OOP
         public string NokRelationshipType;
 
         //Customer Methods
-        public static void CreateCustomer()
+        public Customer CreateCustomer()
         {
+            Customer customer = new Customer();
+            Console.WriteLine("Create Customers");
+            Console.WriteLine();
+            Console.WriteLine("Input Custormer Details");
+            Console.WriteLine();
 
+            Console.Write("First Name: ");
+            customer.FirstName = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Last Name: ");
+            customer.LastName = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Middle Name: ");
+            customer.MiddleName = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Gender: Male(M) or Female(F)");
+            string gender = Console.ReadLine();
+            if (gender.ToLower() == "male" || gender.ToLower() == "m")
+            {
+                customer.Gender = "Male";
+            }
+            else if (gender.ToLower() == "female" || gender.ToLower() == "f")
+            {
+                customer.Gender = "Female";
+            }
+            Console.WriteLine();
+
+            Console.Write("National Identification Number(NIN): ");
+            customer.Nin = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Bank Verification Number(BVN): ");
+            customer.Bvn = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Address: ");
+            customer.Address = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Country: ");
+            customer.Country = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("State of Origin: ");
+            customer.StateOfOrigin = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Date of Birth: ");
+            customer.Dob = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Phone Number: ");
+            customer.PhoneNumber = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("E-mail Address: ");
+            customer.Email = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Account Type: Current(C) or Savings(S)");
+            string accountType = Console.ReadLine();
+            if (accountType.ToLower() == "Current" || accountType.ToLower() == "c")
+            {
+                customer.CustomerType = "Current";
+            }
+            else if (accountType.ToLower() == "Savings" || accountType.ToLower() == "S")
+            {
+                customer.CustomerType = "Savings";
+            }
+            Console.WriteLine();
+
+            Console.Write("Next of kin Name: ");
+            customer.NokName = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Next of kin Address: ");
+            customer.NokAddress = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("Next of Kin Phone Number: ");
+            customer.NokPhone = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Next of Kin E-mail Address: ");
+            customer.NokEmail = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Next of KinRelationship: ");
+            customer.NokRelationshipType = Console.ReadLine();
+            Console.WriteLine();
+
+
+            return customer;
         }
-        public static void UpdateCustomer()
+        public Customer UpdateCustomer()
         {
-
+            return null;
         }
-        public static void DeleteCustomer()
+        public Customer DeleteCustomer()
         {
-
+            return null;
         }
-        public static void ListOfCustomers()
+        public Customer[] ListOfCustomers()
         {
-
+            return null;
         }
-        public static void FindCustomer()
+        public Customer[] FindCustomer()
         {
-
+            return null;
         }
-        public static void FindCustomerById()
+        public Customer FindCustomerById()
         {
-
+            return null;
         }
-        public static void FindCustomerByCode()
+        public Customer FindCustomerByCode()
         {
-
+            return null;
         }
         public static bool VerifyNIN()
         {
